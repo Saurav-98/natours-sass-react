@@ -1,44 +1,20 @@
-/*
-COLORS:
+// Abstracts
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
+@import "./partials/abstracts/functions";
+@import "./partials/abstracts/mixins";
+@import "./partials/abstracts/variables";
+// Base
 
-*/
+@import "./partials/base/base";
+@import "./partials/base/animations";
+@import "./partials/base/typography";
+@import "./partials/base/utilities";
 
-/* font-family: 'Rubik', sans-serif; */
+// Components
+@import "./partials/components/btn";
 
-/* 1 - Reset CSS */
+// Layout
+@import "./partials/layout/hero";
 
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
-
-$color-grey-dark: #777;
-$color-white: #fff;
-$color-black: #000;
-
-@import "./partials/components/hero";
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box;
-}
+// Pages
+@import "./partials/pages/home";
