@@ -3,7 +3,7 @@ import logoWhite from "../assets/logo-white.png";
 
 const Hero = () => {
   return (
-    <header className="header">
+    <div className="header">
       <div className="header__logo-container">
         <img src={logoWhite} alt="natours logo" className="header__logo" />
       </div>
@@ -16,10 +16,10 @@ const Hero = () => {
           </span>
         </h1>
         <a href="#" className="btn btn--primary btn--animation">
-          Explore our tours
+          Discover our tours
         </a>
       </main>
-    </header>
+    </div>
   );
 };
 

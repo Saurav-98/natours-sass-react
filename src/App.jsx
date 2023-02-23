@@ -1,11 +1,17 @@
 import React from "react";
+import About from "./components/About";
 import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div>
-      <Hero />
-    </div>
+    <>
+      <header>
+        <Hero />
+      </header>
+      <main>
+        <About />
+      </main>
+    </>
   );
 };
 

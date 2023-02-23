@@ -1,0 +1,33 @@
+.u-center-text {
+  text-align: center;
+}
+
+.u-animate-Effect {
+  display: inline-block;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  letter-spacing: 2px;
+
+  // to show the background color gradient only on text and make text color transparent
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    transform: scale(0.95) skew(-2deg, 2deg);
+  }
+}
+
+.u-margin-bottom-lg {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-md {
+  margin-bottom: 4rem;
+}
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,13 @@
+.about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+
+  &__grid {
+    max-width: 110rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
