@@ -1,0 +1,46 @@
+.features {
+  padding: 20rem 0;
+
+  margin-top: -12vh;
+  transform: skewY(-7deg);
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.7),
+      rgba($color-primary-dark, 0.7)
+    ),
+    url(../assets/nat-4.jpg);
+  background-size: cover;
+
+  & > * {
+    transform: skewY(7deg);
+  }
+  &__container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-box {
+      background-color: rgba($color-white, 0.8);
+      font-size: 1.5rem;
+      padding: 3rem 1.5rem;
+      text-align: center;
+      border-radius: 3px;
+      box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+      transition: all 0.3s ease-in;
+
+      &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+      }
+
+      &-icon {
+        display: inline-block;
+        font-size: 6rem;
+        margin-bottom: 1.5rem;
+        color: $color-primary;
+      }
+    }
+  }
+}
